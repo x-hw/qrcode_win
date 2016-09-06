@@ -1,2 +1,59 @@
 # qrcode_win
 a .exe file of my repo: qrcode  -  我的另一个 repo：qrcode 的 .exe 版本
+
+## Introduction   介绍
+
+* This is a `.exe` program working on Windows. When you don't want to setup Python or when you don't want to use commands, you can try it.
+
+* Packed up with [PyInstaller](https://github.com/pyinstaller/pyinstaller).
+
+* Original codes: https://github.com/sylnsfar/qrcode
+
+* **Attention 1**: This program is just a simple pack-up with unknown efficiency and stability. On some pc it's fast, and others slow.(don't know why)
+
+* **Attention 2**: At first time to run, it may download some dependent files, which is from the dependent module [imageio](https://pypi.python.org/pypi/imageio).
+
+  ​      
+
+
+
+* 这是一个运行在 Windows 系统的 `.exe` 程序。如果你不想安装 Python 或者不想使用命令行就可以试一下这个程序。
+* 该程序使用 [PyInstaller](https://github.com/pyinstaller/pyinstaller) 打包而成。
+* 原始代码在：https://github.com/sylnsfar/qrcode
+* **注意1**：该程序只是一个简单的打包，运行效率、稳定性未知，测试时，有的电脑快，有的电脑慢。(原因不明)
+* **注意2**：第一次使用可能会自动下载一些库文件，来自于程序的依赖库 [imageio](https://pypi.python.org/pypi/imageio)。
+
+
+
+
+
+## Usage   用法
+
+To use this program, you need a `.txt` file named `info.txt` which contains the arguments to generate QR-Code.
+
+The format is like this:	
+
+运行此程序需要一个叫 `info.txt` 的文本文件，里面写上用来生成二维码的所有参数。
+
+文件格式如下：
+
+```python
+# an example for info.txt:
+words=https://github.com
+v=10
+l=Q
+p=github_logo.png
+c
+con=1.5
+bri=1.3
+```
+
+**Important**: One argument, one line and no space at the both side of `=` . If a argument is useless, delete it. (words is neccesary)
+
+See https://github.com/sylnsfar/qrcode for the meaning of every argument and the results of this program.
+
+​    
+
+**重要**：一个参数一行，等号左右不要空格。如果不使用某个参数，则将其删去。（words是必要的）
+
+各个参数的含义，以及程序效果图，请参考原代码地址： https://github.com/sylnsfar/qrcode
