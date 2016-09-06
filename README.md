@@ -1,5 +1,7 @@
 # qrcode_win
-a .exe file of my repo: qrcode  -  我的另一个 repo：qrcode 的 .exe 版本
+ .exe version of qrcode
+
+ qrcode 的 .exe 版本
 
 ## Introduction   介绍
 
@@ -11,7 +13,7 @@ a .exe file of my repo: qrcode  -  我的另一个 repo：qrcode 的 .exe 版本
 
 * **Attention 1**: This program is just a simple pack-up with unknown efficiency and stability. On some pc it's fast, and others slow.(don't know why)
 
-* **Attention 2**: At first time to run, it may download some dependent files, which is from the dependent module [imageio](https://pypi.python.org/pypi/imageio).
+* **Attention 2**: At first time to run, it may download some dependent files, which is because of the dependent module [imageio](https://pypi.python.org/pypi/imageio).
 
   ​      
 
@@ -21,13 +23,15 @@ a .exe file of my repo: qrcode  -  我的另一个 repo：qrcode 的 .exe 版本
 * 该程序使用 [PyInstaller](https://github.com/pyinstaller/pyinstaller) 打包而成。
 * 原始代码在：https://github.com/sylnsfar/qrcode
 * **注意1**：该程序只是一个简单的打包，运行效率、稳定性未知，测试时，有的电脑快，有的电脑慢。(原因不明)
-* **注意2**：第一次使用可能会自动下载一些库文件，来自于程序的依赖库 [imageio](https://pypi.python.org/pypi/imageio)。
+* **注意2**：第一次使用可能会自动下载一些库文件，原因是程序的依赖库 [imageio](https://pypi.python.org/pypi/imageio)。
 
 
 
 
 
 ## Usage   用法
+
+### step 1 - info.txt
 
 To use this program, you need a `.txt` file named `info.txt` which contains the arguments to generate QR-Code.
 
@@ -48,12 +52,23 @@ con=1.5
 bri=1.3
 ```
 
-**Important**: One argument, one line and no space at the both side of `=` . If a argument is useless, delete it. (words is neccesary)
+* **Important**: One argument, one line and no space at the both side of `=` . If a argument is useless, delete it. (words is neccesary)
 
-See https://github.com/sylnsfar/qrcode for the meaning of every argument and the results of this program.
+  **重要**：一个参数一行，等号左右不要空格。如果不使用某个参数，则将其删去。（words是必要的）
 
-​    
+* See https://github.com/sylnsfar/qrcode for the meaning of every argument and the results of this program.
 
-**重要**：一个参数一行，等号左右不要空格。如果不使用某个参数，则将其删去。（words是必要的）
+  各个参数的含义，以及结果效果图，请参考原代码地址： https://github.com/sylnsfar/qrcode
 
-各个参数的含义，以及程序效果图，请参考原代码地址： https://github.com/sylnsfar/qrcode
+
+
+​     
+
+### step 2 -  Run it
+
+After editing the `info.txt` file, put it into the folder where this program is (if there is a picture, put together too). Click the `myqr.exe` and wait for the result like:
+
+编辑好`info.txt` 之后，就把它与程序放在同一文件夹（如果有图片，图片也放一起），双击 `myqr.exe` ，然后等待成功提示（如下）：
+
+![](https://github.com/sylnsfar/qrcode_win/blob/master/test.png)
+
