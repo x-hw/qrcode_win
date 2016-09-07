@@ -3,6 +3,8 @@
 
  EXE 版本的  [qrcode](https://github.com/sylnsfar/qrcode) ，适用于Windows系统（即使没有安装Python）
 
+![](https://github.com/sylnsfar/qrcode_win/blob/master/example/a_qrcode.gif)
+
 ​        
 
 ## Introduction   介绍
@@ -68,5 +70,5 @@ After editing the `info.txt` file, put it into the folder where this program is 
 
 编辑好`info.txt` 之后，就把它与程序放在同一文件夹（如果有图片，图片也放一起），双击 `myqr.exe` ，然后等待成功提示（如下）：
 
-![](https://github.com/sylnsfar/qrcode_win/blob/master/test.png)
+![](https://github.com/sylnsfar/qrcode_win/blob/master/example/test.png)
 
